@@ -41,6 +41,10 @@ public class Calc {
         float resultado = n1 / n2;
         return resultado;
     }
+    public static float raizCuadrada(float n1, float n2){
+        float resultado = (float) Math.pow(n1, 1.0/n2);
+        return resultado;
+    }
     /**
      * @param SUMA asignacion de esta operación al número 1
      */
