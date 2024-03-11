@@ -41,8 +41,15 @@ public class Calc {
         float resultado = n1 / n2;
         return resultado;
     }
-    public static float raizCuadrada(float n1, float n2){
-        float resultado = (float) Math.pow(n1, 1.0/n2);
+    
+    /**
+     *
+     * @param n1 nº radical (el que se mete dentro de la raíz)
+     * @param n2 nº índice (el que está fuera de la raíz (por ej. en la raíz cuadrada sería el 2)
+     * @return resultado de la operacion
+     */
+    public static double raizCuadrada(double n1, double n2){
+        double resultado = Math.pow(n1, 1.0/n2);
         return resultado;
     }
     /**
@@ -61,6 +68,10 @@ public class Calc {
      * @param DIVISION asignacion de esta operación al número 4
      */
     public static final int DIVISION = 4;
+    /**
+     * @param RAICES asignación de esta operación al nº 5
+     */
+    public static final int  RAICES = 5;
     
     /**
      *
@@ -88,13 +99,13 @@ public class Calc {
             case DIVISION:
                 resultado = Calc.division(n1, n2);
                 break;
+            case RAICES:
+                resultado = (float)Calc.raizCuadrada(n1,n2);
+                break;
             default:
                 System.out.println("No salió la operación esperada");
             
         }
-        
-        
-        
         return resultado;
     }
 }
