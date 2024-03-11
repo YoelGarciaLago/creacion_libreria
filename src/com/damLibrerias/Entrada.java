@@ -3,7 +3,8 @@ package com.damLibrerias;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Entrada {
+public class Entrada implements Interfaz {
+    int opc;String msg;
     public static float[] elegirNúmeros(){
         Scanner sc = new Scanner(System.in);
         float [] lista = new float[2];
@@ -24,5 +25,10 @@ public class Entrada {
         return lista;
     
 }
+    
+    @Override
+    public void elegirOpcion(int opc, String msg) {
+    
     }
+}
 

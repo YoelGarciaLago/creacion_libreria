@@ -3,7 +3,8 @@ package com.damLibrerias;
 import javax.swing.*;
 import java.util.Scanner;
 
-public class Salida {
+public class Salida implements Interfaz {
+    int opc;String msg;
     /**
      * @param bool permite controlar mejor el flujo
      */
@@ -60,10 +61,10 @@ public class Salida {
         return bool;
     }
     
-   
     
+    @Override
+    public void elegirOpcion(int opc, String msg) {
     
-    
-    
+    }
 }
 
